@@ -50,7 +50,7 @@ class Noticia {
   getPosterImg(){
 
     if( imgUrl == null){
-      return Text('No hay imagen'); //imagen de fondo por si no encuntra nada
+      return ''; //imagen de fondo por si no encuntra nada
     }else{
       return imgUrl;
     }
