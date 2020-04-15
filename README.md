@@ -1,6 +1,6 @@
 # dofus_v0
 
-A new Flutter project.
+Primera version de la aplicacion movil para la visualizacion de guias Dofus Para Noobs.
 
 ## Getting Started
 
