@@ -1,5 +1,6 @@
 import 'package:dofus_v0/src/pages/lista_mision_page.dart';
 import 'package:dofus_v0/src/pages/menu_page.dart';
+import 'package:dofus_v0/src/pages/mision_detalle.dart';
 import 'package:dofus_v0/src/pages/noticia_detalle.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/'  : (BuildContext context) => MenuPage(),
         'detalle'  : (BuildContext context) => NoticiaDetalle(),
         'lista'  : (BuildContext context) => ListaMisionPage(),
+        'misiondetalle'  : (BuildContext context) => MisionDetalle(),
       },
     );
   }

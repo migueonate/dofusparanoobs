@@ -1,4 +1,9 @@
 import 'package:dofus_v0/src/models/mision_model.dart';
+import 'package:dofus_v0/src/providers/misiones_provider.dart';
+import 'package:dofus_v0/src/providers/noticias_provider.dart';
+import 'package:dofus_v0/src/widgets/card_widget.dart';
+import 'package:dofus_v0/src/widgets/list_widget.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -6,15 +11,20 @@ import 'dart:ui';
 
 class ListaMisionPage extends StatelessWidget {
 
-  
+  final misionesProvider = new MisionesProvider();
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        bottomNavigationBar: Icon(Icons.arrow_back),
-        body:ListView(
-              children: countries.map(_buildItem).toList(),
-    )
-    );
+    return Scaffold(          
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            _titulos(),
+            _swiperTarjetas(context)
+          ],
+        ),
+      ),
+        );
   }
 
 
@@ -35,17 +45,26 @@ class ListaMisionPage extends StatelessWidget {
 
   }
 
+Widget _swiperTarjetas( BuildContext context){
 
-  Widget _buildItem(Mision mision) {
-  return new ListTile(
-      title: new Text(mision.name),
-      subtitle: new Text('Capital: ${mision.capital}'),
-      leading: new Icon(Icons.map),
-      onTap: (){
-        print(mision.name);
-      },
-  );
+    return Container(
+      child: Column(
+        children: <Widget>[
+          FutureBuilder(
+            future: misionesProvider.getMisiones(),
+            builder: (BuildContext context, AsyncSnapshot snapshot){
 
-}
+              if ( snapshot.hasData){
+                return ListMision(misiones: snapshot.data);
+              }else{
+                return Center(child: CircularProgressIndicator());
+              }
+            }
+          )
+        ],
+      ),
+    );
+ 
+  }
 
 }
