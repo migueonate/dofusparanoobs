@@ -1,10 +1,9 @@
-import 'package:dofus_v0/src/models/mision_model.dart';
+import 'package:flutter/material.dart';
+
 import 'package:dofus_v0/src/providers/misiones_provider.dart';
-import 'package:dofus_v0/src/providers/noticias_provider.dart';
-import 'package:dofus_v0/src/widgets/card_widget.dart';
+
 import 'package:dofus_v0/src/widgets/list_widget.dart';
 
-import 'package:flutter/material.dart';
 
 
 import 'dart:ui';

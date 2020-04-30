@@ -48,32 +48,32 @@ class MisionPage extends StatelessWidget {
       children: [
         TableRow(
           children: [
-            _crearBotonRedondeado( context, Colors.black, 'assets/Icono_Logros.png', 'Por Logros' ),
-            _crearBotonRedondeado( context, Colors.black, 'assets/Dofus.png', 'Los Dofus' ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Icono_Logros.png', 'Por Logros', 'lista' ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Dofus.png', 'Los Dofus', 'misionesdofus' ),
           ]
         ),
         TableRow(
           children: [
-            _crearBotonRedondeado( context, Colors.black, 'assets/Eventos.jpg', 'Eventos' ),
-            _crearBotonRedondeado( context, Colors.black, 'assets/Logo_Bonta.jpg', 'Almanax' ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Eventos.jpg', 'Eventos', 'lista'  ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Logo_Bonta.jpg', 'Almanax', 'lista'  ),
           ]
         ),
         TableRow(
           children: [
-            _crearBotonRedondeado( context, Colors.black, 'assets/Logo_Bonta.jpg', 'Bonta' ),
-            _crearBotonRedondeado( context, Colors.black, 'assets/Logo_Brakmar.png', 'Brakmar' ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Logo_Bonta.jpg', 'Bonta', 'lista'  ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Logo_Brakmar.png', 'Brakmar', 'lista'  ),
           ]
         ),
         TableRow(
           children: [
-            _crearBotonRedondeado( context,Colors.black, 'assets/Dimensiones.jpg', 'Dimensiones Divinas' ),
-            _crearBotonRedondeado( context,Colors.black, 'assets/Actitudes.jpg', 'Actitudes'),
+            _crearBotonRedondeado( context,Colors.black, 'assets/Dimensiones.jpg', 'Dimensiones Divinas', 'lista'  ),
+            _crearBotonRedondeado( context,Colors.black, 'assets/Actitudes.jpg', 'Actitudes', 'lista' ),
           ]
         ),
         TableRow(
           children: [
-            _crearBotonRedondeado( context,Colors.black, 'assets/Aviso.jpg', 'Busqueda y Captura'),
-            _crearBotonRedondeado( context,Colors.black, 'assets/Complementaria.png', 'Complementarias' ),
+            _crearBotonRedondeado( context,Colors.black, 'assets/Aviso.jpg', 'Busqueda y Captura', 'lista' ),
+            _crearBotonRedondeado( context,Colors.black, 'assets/Complementaria.png', 'Complementarias', 'lista'  ),
           ]
         )
       ],
@@ -82,7 +82,7 @@ class MisionPage extends StatelessWidget {
 
   }
 
-  Widget _crearBotonRedondeado( BuildContext context, color, String icono, String texto ) {
+  Widget _crearBotonRedondeado( BuildContext context, color, String icono, String texto, String url ) {
  
     final boton = ClipRect(       
         child: Container(
@@ -119,7 +119,7 @@ class MisionPage extends StatelessWidget {
       return GestureDetector(
         child: boton,
         onTap: (){
-          Navigator.pushNamed(context, 'lista');
+          Navigator.pushNamed(context, url);
         },
       );
   }

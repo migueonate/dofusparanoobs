@@ -35,23 +35,24 @@ class CardSwiper extends StatelessWidget {
     return noticias.map( (noticia) {
 
       final tarjeta = Container(
-        margin: EdgeInsets.only(right: 7.0),
+        margin: EdgeInsets.only(right: 5.0),
         child: Column(
           children: <Widget>[
             ClipRRect(
               borderRadius: BorderRadius.circular(20.0),
               child: FadeInImage(placeholder: AssetImage('assets/original.gif'), 
-              image: NetworkImage(noticia.getPosterImg()),
+              image: NetworkImage(noticia.imgUrl),
               fit: BoxFit.cover,
-              height: 300.0,        
+              height: 300.0 
               ),
             ),
             SizedBox(height: 5.0),
             Text(
               noticia.title,
-              overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.caption,
-            )
+              style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold) ,
+              textAlign: TextAlign.center                
+              ),
+            
           ],
         ),
       );

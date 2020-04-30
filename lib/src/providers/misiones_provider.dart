@@ -45,7 +45,7 @@ class MisionesProvider {
         datos.add(_mision);
       });
 
-      print(datos[0].contentImgUrl);
+      //print(datos[0].contentImgUrl);
 
       return datos;
       

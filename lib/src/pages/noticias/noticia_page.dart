@@ -23,29 +23,6 @@ final noticiasProvider = new NoticiasProvider();
         );
   }
 
-  // Widget _swiperTarjetas() {
-
-  //   return FutureBuilder(
-  //     future: noticiasProvider.getEnCines(),
-  //     builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
-
-  //       if (snapshot.hasData){
-  //           return CardSwiper(peliculas: snapshot.data);
-  //       }else{
-  //         return Container(
-  //           height: 400.0,
-  //           child: Center(
-  //             child: CircularProgressIndicator()
-  //             )
-  //         );
-  //       }
-        
-  //     },
-  //   );
- 
-
-  // } 
-
   Widget _swiperTarjetas( BuildContext context){
 
     return Container(

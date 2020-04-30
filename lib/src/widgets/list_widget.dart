@@ -17,14 +17,6 @@ class ListMision extends StatelessWidget {
     return Container(
       // padding: EdgeInsets.only(top: 50.0),
       height: _screenSize.height * 0.8,
-      // child: PageView(
-      //   pageSnapping: false,
-      //   controller: PageController(
-      //     initialPage: 1,
-      //     viewportFraction: 0.6,
-      //   ),
-      //   children: _lista(context),
-      // ),
       child: ListView(
         children: _lista(context),
       ),

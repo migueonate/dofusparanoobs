@@ -41,13 +41,17 @@ class NoticiaDetalle extends StatelessWidget {
       pinned: true,
       flexibleSpace: FlexibleSpaceBar(
         centerTitle: true,
-        title: Text(
-          noticia.title,
-          style: TextStyle(color: Colors.white, fontSize: 16.0),
+        title: Container(
+          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0),
+          width: 250.0,
+          child: Text(
+            noticia.title,
+            style: TextStyle(color: Colors.white, fontSize: 11.0),textAlign: TextAlign.center,
+          ),
         ),
         background: FadeInImage(
-          image: NetworkImage( noticia.getPosterImg() ),
-          placeholder: AssetImage('assets/original.pdf'),
+          image: NetworkImage( noticia.imgUrl),
+          placeholder: AssetImage('assets/original.gif'),
           fadeInDuration: Duration(microseconds: 150),
           fit: BoxFit.cover,
         ),

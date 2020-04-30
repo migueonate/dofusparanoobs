@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer/hidden_drawer_menu.dart';
 
-import 'package:dofus_v0/src/pages/mision_page.dart';
-import 'package:dofus_v0/src/pages/noticia_page.dart';
-import 'package:dofus_v0/src/pages/mazmorra_page.dart';
+
+
+import 'package:dofus_v0/src/pages/mazmorras/mazmorra_page.dart';
+import 'package:dofus_v0/src/pages/misiones/mision_page.dart';
+import 'package:dofus_v0/src/pages/noticias/noticia_page.dart';
 import 'package:dofus_v0/src/pages/tutorial_page.dart';
 
 class MenuPage extends StatefulWidget {

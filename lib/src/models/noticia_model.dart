@@ -40,21 +40,21 @@ class Noticia {
   Noticia.fromJsonMap( Map<String, dynamic> json ) {
 
     id               = json['id'];
-    createDate       = json['create_date'];
+    createDate       = json['createDate'];
     title            = json['title'];
     content          = json['content'];
-    imgUrl           = json['img_url'];
+    imgUrl           = json['imgUrl'];
 
   }
 
-  getPosterImg(){
+  // getPosterImg(){
 
-    if( imgUrl == null){
-      return ''; //imagen de fondo por si no encuntra nada
-    }else{
-      return imgUrl;
-    }
-  }
+  //   if( imgUrl == null){
+  //     return ''; //imagen de fondo por si no encuntra nada
+  //   }else{
+  //     return imgUrl;
+  //   }
+  // }
 
 
 }
