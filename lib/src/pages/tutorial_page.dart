@@ -65,7 +65,7 @@ class TutorialPage extends StatelessWidget {
           height: 180.0,
           margin: EdgeInsets.all(15.0),
           decoration: BoxDecoration(
-            color: Color.fromRGBO(0, 188,212,50),
+            color: Color.fromRGBO(134,255,202,100),
             borderRadius: BorderRadius.circular(20.0)
           ),
           child: Column(

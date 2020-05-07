@@ -16,7 +16,7 @@ class ListMision extends StatelessWidget {
 
     return Container(
       // padding: EdgeInsets.only(top: 50.0),
-      height: _screenSize.height * 0.8,
+      height: _screenSize.height * 0.7,
       child: ListView(
         children: _lista(context),
       ),
@@ -38,6 +38,7 @@ class ListMision extends StatelessWidget {
       onTap: (){ 
 
         Navigator.pushNamed(context, 'misiondetalle', arguments: mision);
+        
       },
     );
 

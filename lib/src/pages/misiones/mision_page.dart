@@ -48,7 +48,7 @@ class MisionPage extends StatelessWidget {
       children: [
         TableRow(
           children: [
-            _crearBotonRedondeado( context, Colors.black, 'assets/Icono_Logros.png', 'Por Logros', 'lista' ),
+            _crearBotonRedondeado( context, Colors.black, 'assets/Icono_Logros.png', 'Principales', 'listalogrosprincipales' ),
             _crearBotonRedondeado( context, Colors.black, 'assets/Dofus.png', 'Los Dofus', 'misionesdofus' ),
           ]
         ),
@@ -89,7 +89,7 @@ class MisionPage extends StatelessWidget {
           height: 180.0,
           margin: EdgeInsets.all(15.0),
           decoration: BoxDecoration(
-            color: Color.fromRGBO(0, 188,212,50),
+            color: Color.fromRGBO(134,255,202,100), //255,236,157,100  255,236,157
             borderRadius: BorderRadius.circular(20.0)
           ),
           child: Column(
@@ -101,7 +101,7 @@ class MisionPage extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
                   child: FadeInImage(
-                    placeholder: AssetImage('assets/original.gif'), 
+                    placeholder: AssetImage('assets/loading.gif'), 
                     image: AssetImage(icono),
                     fit: BoxFit.cover,
                     // width: 130.0,       
@@ -109,7 +109,7 @@ class MisionPage extends StatelessWidget {
                 ),
                 padding: EdgeInsets.all(8.0),
               ),
-              Text( texto , style: TextStyle( color: color, fontWeight: FontWeight.bold )),
+              Text( texto , style: TextStyle( color: color, fontWeight: FontWeight.bold)),
               SizedBox( height: 5.0 ),           
             ],
           ),

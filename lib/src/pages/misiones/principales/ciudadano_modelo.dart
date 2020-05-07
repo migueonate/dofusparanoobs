@@ -4,7 +4,7 @@ import 'dart:ui';
 
 
 
-class MisionesDofusPage extends StatelessWidget {
+class CiudadanoModeloPage extends StatelessWidget {
 
 
   @override

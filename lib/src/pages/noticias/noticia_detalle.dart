@@ -18,10 +18,6 @@ class NoticiaDetalle extends StatelessWidget {
               [
                 SizedBox( height: 10.0 ),
                 _descripcion( noticia ),
-                _descripcion( noticia ),
-                _descripcion( noticia ),
-                _descripcion( noticia ),
-                //_crearCasting( pelicula )
               ]
   
             ),
@@ -51,7 +47,7 @@ class NoticiaDetalle extends StatelessWidget {
         ),
         background: FadeInImage(
           image: NetworkImage( noticia.imgUrl),
-          placeholder: AssetImage('assets/original.gif'),
+          placeholder: AssetImage('assets/loading.gif'),
           fadeInDuration: Duration(microseconds: 150),
           fit: BoxFit.cover,
         ),

@@ -1,9 +1,7 @@
+import 'package:dofus_v0/src/widgets/list_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dofus_v0/src/providers/misiones_provider.dart';
-
-import 'package:dofus_v0/src/widgets/list_widget.dart';
-
 
 
 import 'dart:ui';
@@ -14,7 +12,15 @@ class ListaMisionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(          
+    return Scaffold( 
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+        title: Container(
+              child: Image(image: AssetImage('assets/Logo2.png'), 
+              fit: BoxFit.cover), 
+              width: 200.0),
+              backgroundColor: Colors.white,
+              ),         
       body: Container(
         child: Column(
           children: <Widget>[

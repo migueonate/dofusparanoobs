@@ -1,6 +1,4 @@
 import 'package:dofus_v0/src/models/mision_model.dart';
-import 'package:dofus_v0/src/models/noticia_model.dart';
-import 'package:dofus_v0/src/providers/misiones_provider.dart';
 import 'package:flutter/material.dart';
 
 class MisionDetalle extends StatelessWidget {
@@ -48,7 +46,7 @@ class MisionDetalle extends StatelessWidget {
         ),
         background: FadeInImage(
           image: NetworkImage( mision.headerImgUrl),
-          placeholder: AssetImage('assets/original.gif'),
+          placeholder: AssetImage('assets/loading.gif'),
           fit: BoxFit.cover,
         ),
       ),
@@ -87,7 +85,7 @@ class MisionDetalle extends StatelessWidget {
                   Text(mision.contentText[i]),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10.0),
-                    child: FadeInImage(placeholder: AssetImage('assets/original.gif'), image: NetworkImage(mision.contentImgUrl[i])),
+                    child: FadeInImage(placeholder: AssetImage('assets/loading.gif'), image: NetworkImage(mision.contentImgUrl[i])),
                   )
               ],
               

@@ -26,7 +26,7 @@ class _MenuPageState extends State<MenuPage> {
     items.add(new ScreenHiddenDrawer(
         new ItemHiddenMenu(
           name: 'Noticias',
-          baseStyle: TextStyle( color: Colors.white.withOpacity(0.8), fontSize: 28.0 ),
+          baseStyle: TextStyle( color: Colors.white, fontSize: 28.0, fontWeight: FontWeight.bold),
           colorLineSelected: Colors.teal,
         ),
         NoticiaPage()));
@@ -35,7 +35,7 @@ class _MenuPageState extends State<MenuPage> {
     items.add(new ScreenHiddenDrawer(
         new ItemHiddenMenu(
           name: 'Misiones',
-          baseStyle: TextStyle( color: Colors.white.withOpacity(0.8), fontSize: 28.0 ),
+          baseStyle: TextStyle( color: Colors.white, fontSize: 28.0, fontWeight: FontWeight.bold),
           colorLineSelected: Colors.orange,
         ),
         MisionPage()));
@@ -44,8 +44,8 @@ class _MenuPageState extends State<MenuPage> {
       items.add(new ScreenHiddenDrawer(
         new ItemHiddenMenu(
           name: 'Tutoriales',
-          baseStyle: TextStyle( color: Colors.white.withOpacity(0.8), fontSize: 28.0 ),
-          colorLineSelected: Colors.orange,
+          baseStyle: TextStyle( color: Colors.white, fontSize: 28.0, fontWeight: FontWeight.bold),
+          colorLineSelected: Colors.teal,
         ),
         TutorialPage()));
 
@@ -53,7 +53,7 @@ class _MenuPageState extends State<MenuPage> {
     items.add(new ScreenHiddenDrawer(
         new ItemHiddenMenu(
           name: 'Mazmorras',
-          baseStyle: TextStyle( color: Colors.white.withOpacity(0.8), fontSize: 28.0 ),
+          baseStyle: TextStyle( color: Colors.white, fontSize: 28.0, fontWeight: FontWeight.bold),
           colorLineSelected: Colors.orange,
         ),
         MazmorraPage()));
@@ -91,7 +91,7 @@ class _MenuPageState extends State<MenuPage> {
               fit: BoxFit.cover), 
               width: 200.0,),
         //    enableShadowItensMenu: true,
-        //    backgroundMenu: DecorationImage(image: ExactAssetImage('assets/bg_news.jpg'),fit: BoxFit.cover),
+           backgroundMenu: DecorationImage(image: ExactAssetImage('assets/fondo_menu.png'),fit: BoxFit.cover),
     );
   }
 }
